@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ContactList
@@ -17,16 +10,10 @@ namespace ContactList
             InitializeComponent();
         }
 
+        // Sự kiện này vẫn được giữ lại nhưng không còn gọi AddContactForm
         private void btnThemLienHe_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn đã nhấn nút Thêm liên hệ!");
-            AddContactForm addForm = new AddContactForm();
-            addForm.ShowDialog();
-        }
-        
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Chức năng thêm liên hệ đã bị xóa.");
         }
     }
 }
