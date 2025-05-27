@@ -20,8 +20,10 @@ namespace ContactList
         private void btnThemLienHe_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn đã nhấn nút Thêm liên hệ!");
+            AddContactForm addForm = new AddContactForm();
+            addForm.ShowDialog();
         }
-
+        
         private void MainForm_Load(object sender, EventArgs e)
         {
 
